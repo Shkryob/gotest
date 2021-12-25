@@ -27,5 +27,5 @@ func main() {
 	us := store.NewUserStore()
 	h := handler.NewHandler(us)
 	h.Register(v1)
-	r.Logger.Fatal(r.Start(":1323"))
+	r.Logger.Fatal(r.Start(":8080"))
 }
