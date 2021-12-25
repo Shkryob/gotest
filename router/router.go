@@ -15,5 +15,6 @@ func New() *echo.Echo {
 		AllowMethods: []string{echo.GET, echo.HEAD, echo.PUT, echo.PATCH, echo.POST, echo.DELETE},
 	}))
 	e.Validator = NewValidator()
+	e.Static("/", "front/out")
 	return e
 }

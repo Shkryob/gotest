@@ -9,3 +9,10 @@ go mod download
 ```bash
 go run main.go
 ```
+
+# Tests
+
+```bash
+go test ./...
+```
+
